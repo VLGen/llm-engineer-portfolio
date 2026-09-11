@@ -196,21 +196,6 @@ function Landing() {
                 </Button>
               </div>
             </Reveal>
-            <Reveal delay={320}>
-              <dl className="mt-16 grid grid-cols-2 gap-6 border-t border-border/60 pt-8 sm:grid-cols-4">
-                {[
-                  ["500+", "документов в RAG"],
-                  ["30 сек", "вместо 15–20 минут"],
-                  ["89%", "recall ответов"],
-                  ["×10", "ускорение обработки"],
-                ].map(([v, l]) => (
-                  <div key={l}>
-                    <dt className="font-display text-2xl font-bold text-primary sm:text-3xl">{v}</dt>
-                    <dd className="mt-1 text-xs text-muted-foreground sm:text-sm">{l}</dd>
-                  </div>
-                ))}
-              </dl>
-            </Reveal>
           </div>
         </section>
 
