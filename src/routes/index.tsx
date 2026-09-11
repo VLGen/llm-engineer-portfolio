@@ -225,7 +225,7 @@ function Landing() {
         <section id="experience" className="border-y border-border/60 bg-secondary/20">
           <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24">
             <Reveal>
-              <SectionTitle kicker="Опыт" title="Опыт, релевантный AI Automation" />
+              <SectionTitle kicker="Опыт" title="Опыт работы в компании" />
             </Reveal>
             <Reveal delay={80}>
               <Card className="border-border/70 bg-card/70">
