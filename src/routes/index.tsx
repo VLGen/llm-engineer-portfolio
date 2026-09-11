@@ -343,7 +343,7 @@ function Landing() {
             <Reveal>
               <SectionTitle kicker="Контакты" title="По предложениям звоните или пишите:" />
             </Reveal>
-            <div className="grid gap-5 lg:grid-cols-3">
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {[
                 {
                   icon: Phone,
@@ -362,6 +362,12 @@ function Landing() {
                   label: "GitHub",
                   value: "github.com/VLGen",
                   href: "https://github.com/VLGen",
+                },
+                {
+                  icon: TelegramIcon,
+                  label: "Telegram",
+                  value: "@SZh1gal",
+                  href: "https://t.me/SZh1gal",
                 },
               ].map((c, i) => (
                 <Reveal key={c.label} delay={i * 90}>
