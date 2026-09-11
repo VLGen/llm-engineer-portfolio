@@ -348,7 +348,7 @@ function Landing() {
         <section id="contacts" className="border-t border-border/60 bg-secondary/20">
           <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24">
             <Reveal>
-              <SectionTitle kicker="Контакты" title="Обсудим автоматизацию?" />
+              <SectionTitle kicker="Контакты" title="По предложениям звоните или пишите:" />
             </Reveal>
             <div className="grid gap-5 lg:grid-cols-3">
               {[
