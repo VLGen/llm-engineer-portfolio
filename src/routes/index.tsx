@@ -12,6 +12,14 @@ import {
 } from "lucide-react";
 
 import { Reveal } from "@/components/Reveal";
+
+function TelegramIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0Zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.697.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.139-5.062 3.346-.479.33-.913.489-1.302.481-.428-.008-1.252-.241-1.66-.44-.668-.34-.96-.596-.96-1.079 0-.333.258-.682.793-.994 3.1-1.898 5.173-3.151 6.218-3.76C14.91 7.9 16.49 7.13 16.907 7.224Z" />
+    </svg>
+  );
+}
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -335,7 +343,7 @@ function Landing() {
             <Reveal>
               <SectionTitle kicker="Контакты" title="По предложениям звоните или пишите:" />
             </Reveal>
-            <div className="grid gap-5 lg:grid-cols-3">
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {[
                 {
                   icon: Phone,
@@ -354,6 +362,12 @@ function Landing() {
                   label: "GitHub",
                   value: "github.com/VLGen",
                   href: "https://github.com/VLGen",
+                },
+                {
+                  icon: TelegramIcon,
+                  label: "Telegram",
+                  value: "@SZh1gal",
+                  href: "https://t.me/SZh1gal",
                 },
               ].map((c, i) => (
                 <Reveal key={c.label} delay={i * 90}>
